@@ -5,7 +5,8 @@
     <!-- Copyright © 2020 by www.x6k.com -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>恋爱计时器</title>
+    <!--<title>恋爱计时器</title>-->
+    <title>分手计时器</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         html,
@@ -84,7 +85,8 @@
             <div class="container-fluid">
                 <div class="box">
                     <div class="jumbotron text-center">
-                        <h1>我们相恋了</h1>
+                        <!--<h1>我们相恋了</h1>-->
+                        <h1>我们分开了</h1>
                         <h3 class="timer">
                             <div class="row">
                                 <b id="d"></b> 天 <b id="h"></b> 时 <b id="m"></b> 分
@@ -172,7 +174,8 @@
 	    
         function timer() {
         	//setFullYear()方法的三个参数year,month,day；其中的month表示月份的数值是介于0~11之间。
-            var start = new Date(2023, 00, 24, 21, 21, 21); // 2023.01.24 21:21:00
+            //var start = new Date(2023, 00, 24, 21, 21, 21); // 2023.01.24 21:21:00
+            var start = new Date(2023, 07, 03, 21, 47, 21);
             var t = new Date() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
